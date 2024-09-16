@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegancia Digital - Productos</title>
+    <link rel="stylesheet" href="PaginaPrincipalIndex.css">
+    <link rel="stylesheet" href="productos.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Elegancia Digital</h1>
+            <p class="tagline">Descubre nuestra colección exclusiva</p>
+        </div>
+    </header>
+
+    <nav class="navegacion">
+        <div class="container">
+            <a href="index.html" class="nav-btn">Página Principal</a>
+            <a href="ordenes.html" class="nav-btn">Mis Órdenes</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="filtros">
+            <h2>Categorías</h2>
+            <div class="botones-filtro">
+                <button class="filtro-btn activo" data-categoria="todos">Todos</button>
+                <button class="filtro-btn" data-categoria="ropa">Ropa</button>
+                <button class="filtro-btn" data-categoria="tecnologia">Tecnología</button>
+                <button class="filtro-btn" data-categoria="otros">Otros</button>
+            </div>
+        </section>
+
+        <section class="productos" id="productos-container"></section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Elegancia Digital. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="productos.js"></script>
+</body>
+</html>

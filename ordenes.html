@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegancia Digital - Mis Órdenes</title>
+    <link rel="stylesheet" href="PaginaPrincipalIndex.css">
+    <link rel="stylesheet" href="ordenes.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Elegancia Digital</h1>
+            <p class="tagline">Tus compras, tu estilo</p>
+        </div>
+    </header>
+
+    <nav class="navegacion">
+        <div class="container">
+            <a href="index.html" class="nav-btn">Página Principal</a>
+            <a href="productos.html" class="nav-btn">Productos</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h2>Mis Órdenes</h2>
+        <div id="ordenes-lista" class="ordenes-lista">
+            <!-- Las órdenes se cargarán aquí dinámicamente -->
+        </div>
+    </main>
+
+    <div id="orden-detalle" class="orden-detalle">
+        <div class="orden-detalle-contenido">
+            <span class="cerrar">&times;</span>
+            <h3>Detalles de la Orden</h3>
+            <div id="orden-info"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Elegancia Digital. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="ordenes.js"></script>
+</body>
+</html>

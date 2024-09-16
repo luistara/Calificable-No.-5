@@ -1,0 +1,119 @@
+:root {
+    --primary-color: #3a6ea5;
+    --secondary-color: #c0d6df;
+    --text-color: #333;
+    --background-color: #f0f4f8;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+.tagline {
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+.hero {
+    background-image: url('/api/placeholder/1200/400');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 2rem;
+}
+.hero-content {
+    background-color: rgba(0,0,0,0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #2c5282;
+}
+.btnCuenta{
+    Display: inline-block;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    background-color: #ffffff;
+    color: #3a6ea5;
+}
+.btnCuenta:hover{
+    transform: translateY(-5px);
+    
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+.feature {
+    flex-basis: 30%;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color:#3a6ea5;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.feature:hover {
+    transform: translateY(-5px);
+}
+.feature h3 {
+    font-size: 2rem;
+    color: white;
+}
+
+.feature p {
+    color: white;
+}
+footer {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+@media (max-width: 768px) {
+    .hero {
+        height: 300px;
+    }
+    .feature {
+        flex-basis: 100%;
+    }
+}
